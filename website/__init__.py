@@ -12,5 +12,6 @@ def create_site():
     app.config["SECRET_KEY"] = "test"
 
     app.register_blueprint(views, url_prefix="/")
+    app.register_blueprint(auth, url_prefix="/")
 
     return app

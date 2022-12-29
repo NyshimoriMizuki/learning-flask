@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+{% block content %}
+<form method="post">
+    <h3>Sign up</h3>
+    <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" class="form-control" placeholder="Enter Username" />
+        <br>
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email" class="form-control" placeholder="Enter Email" />
+        <br>
+        <label for="make_pw">Password</label>
+        <input type="password" id="make_pw" name="make_pw" class="form-control" placeholder="Make a Password" />
+        <br>
+        <label for="confirm_pw">Confirm Password</label>
+        <input type="password" id="confirm_pw" name="confirm_pw" class="form-control" placeholder="Confirm Password" />
+        <button class="btn btn-primary" type="submit">Sign up</button>
+    </div>
+</form>
+{% endblock %}
