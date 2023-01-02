@@ -8,10 +8,6 @@ body {
     background: lightgray;
 }
 
-.menu-icon {
-    size: 50px;
-}
-
 .header {
     display: flex;
     flex-direction: row;
@@ -24,11 +20,19 @@ body {
 .menu-icon {
     height: 30px;
     margin-right: 10px;
+    order: 1;
 }
 
 .header-title {
     font: 20px 'Roboto', sans-serif;
     font-weight: 300;
+    order: 2;
+}
+
+.user-icon {
+    height: 30px;
+    margin-right: 10px;
+    order: 5;
 }
 
 .container {
