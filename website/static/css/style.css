@@ -1,0 +1,11 @@
+body {
+    margin: 0;
+}
+
+.title {
+    background-color: rgb(54, 54, 54);
+    color: rgb(235, 235, 212);
+    padding: 8px;
+    font-family: 'arial';
+    font-size: 20px;
+}
