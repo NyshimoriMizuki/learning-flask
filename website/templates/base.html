@@ -11,17 +11,23 @@
 </head>
 
 <body>
-    <header class="header">
-        <img class="menu-icon" src="/static/images/menu_icon.png">
+    <!-- <img class="menu-icon" src="/static/images/menu_icon.png"> -->
+    <!-- <img class="user-icon" src="/static/images/user_icon.png"> -->
+    <nav class="header">
+        <ul class="menu">
+            <li><a href="{{ url_for('views.home') }}">Menu</a></li>
+            <li><a href="#">News</a></li>
+        </ul>
         <div class="header-title">NyshiSite</div>
-        <img class="user-icon" src="/static/images/user_icon.png">
-    </header>
-    <div class="container">{% block content %}{% endblock %}</div>
+        <a class="login" href="{{ url_for('auth.login') }}">login</a>
+    </nav>
+    <div class="content">{% block content %}{% endblock %}</div>
 
     <footer>
         <div class="links">
             <a href="https://twitter.com/NyshimoriMizuki" target="_blank">Twitter</a>
             <a href="https://github.com/NyshimoriMizuki" target="_blank">GitHub</a>
+            <a href="https://www.instagram.com/nyshimori_mizuki/" target="_blank">Instagram</a>
             <a href="https://nyshimori.carrd.co/" target="_blank">Links</a>
         </div>
         <div class="about"><i>Text</i></div>
