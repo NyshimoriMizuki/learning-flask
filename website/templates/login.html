@@ -5,11 +5,12 @@
 <form method="post" class="form">
     <h3 class="login-title"><i>Login</i></h3>
     <div class="login-form-group">
-        <label for="email">Email</label>
         <input type="text" id="email" name="email" class="form-control" placeholder="Enter Email" />
-        <label for="password">Password</label>
         <input type="password" id="password" name="password" class="form-control" placeholder="Enter Password" />
     </div>
-    <button class="btn btn-primary" type="submit">Login</button>
+    <button class="btn btn-primary" type="submit">Submit</button>
+    <br>
+    <br>
+    <a class="to-signup" href="{{ url_for('auth.signup') }}"><i>Make a new account</i></a>
 </form>
 {% endblock %}
