@@ -1,15 +1,22 @@
 {% extends "base.html" %}
 
-{% block title %}Home{% endblock %}
+{% block title %}{{title}}{% endblock %}
+
+
 {% block content %}
 <form method="post" class="form">
-    <h3 class="signup-title"><i>Sign up</i></h3>
+    <h3 class="signup-title"><i>New Account</i></h3>
     <div class="signup-form-group">
-        <input type="text" id="username" name="username" class="form-control" placeholder="Username" />
+        <input type="text" id="usersname" name="username" class="form-control" placeholder="Username" />
         <input type="text" id="email" name="email" class="form-control" placeholder="Enter Email" />
         <input type="password" id="make_pw" name="make_pw" class="form-control" placeholder="Make a Password" />
         <input type="password" id="confirm_pw" name="confirm_pw" class="form-control" placeholder="Confirm Password" />
     </div>
     <button class="btn btn-primary" type="submit">submit</button>
+    <div class="error-message"><i>
+            {% for message in messages %}
+            {{message}}<br>
+            {% endfor %}
+        </i></div>
 </form>
 {% endblock %}

@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 
-{% block title %}Home{% endblock %}
+{% block title %}{{title}}{% endblock %}
 {% block content %}
 <form method="post" class="form">
     <h3 class="login-title"><i>Login</i></h3>
@@ -9,6 +9,7 @@
         <input type="password" id="password" name="password" class="form-control" placeholder="Enter Password" />
     </div>
     <button class="btn btn-primary" type="submit">Submit</button>
+    <div class="error-message"><i>{{message}}</i></div>
     <br>
     <br>
     <a class="to-signup" href="{{ url_for('auth.signup') }}"><i>Make a new account</i></a>

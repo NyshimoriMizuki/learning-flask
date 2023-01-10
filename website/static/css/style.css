@@ -139,3 +139,8 @@ footer {
     font-weight: 300;
     border-radius: 25px;
 }
+
+.error-message {
+    font: 15px 'Roboto', sans-serif;
+    color: rgb(204, 14, 7);
+}
